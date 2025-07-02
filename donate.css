@@ -1,0 +1,182 @@
+/* Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* تدرج أزرق أنيق */
+    color: white;
+    padding: 100px 20px; /* زيادة المسافة الداخلية */
+    text-align: center;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.3em;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2a5298;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* Main Section */
+main {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.donation-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.donation-container h2 {
+    font-size: 2.5em;
+    color: #2a5298;
+    margin-bottom: 20px;
+}
+
+.donation-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    background-color: #f7f7f7;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #6a5acd;
+    background-color: #fff;
+    outline: none;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+/* Donation Button */
+.donate-now-btn {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    align-self: center;
+}
+
+.donate-now-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+/* Footer */
+footer {
+    background-color: #2a5298;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    margin-top: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .donation-container {
+        padding: 20px;
+    }
+
+    .donation-form input {
+        padding: 10px;
+    }
+
+    .donate-now-btn {
+        font-size: 1.1em;
+    }
+}
